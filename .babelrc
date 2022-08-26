@@ -1,0 +1,6 @@
+// làm câu lệnh hoạt động
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
