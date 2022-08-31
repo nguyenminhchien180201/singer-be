@@ -7,3 +7,5 @@
 -raw: true tránh lấy ra những thứ k cần thiết kiểm tra form chuẩn api restapi 
 -api giao tiếp giữa server với server không trả ra html, chỉ trả về dữ liệu sạng json object 
 -except file => get ra data chỉ lấy một vài trường 
+- bulk create tạo nhiều trường 1 lúc.
+- differenceWith đưa ra các phần tử khác trong hai mảng
