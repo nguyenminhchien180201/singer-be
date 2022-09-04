@@ -1,10 +1,8 @@
 import userService from "../services/userService";
 
 let handleLogin = async (req, res) => {
-    // kiểm tra các tham số từ client gửi lên 
     let email = req.body.email;
     let password = req.body.password;
-    // end 
     if (!email || !password) {
         return res.status(500).json({
             errCode: 1,

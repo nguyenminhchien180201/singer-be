@@ -64,7 +64,6 @@ let deleteCRUD = async (req, res) => {
 
 
 }
-// một Object phải có key và value
 module.exports = {
     getAboutPage: getAboutPage,
     getHomePage: getHomePage,

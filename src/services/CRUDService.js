@@ -6,7 +6,6 @@ import db from '../models/index';
 
 
 const salt = bcrypt.genSaltSync(10);
-// data input đầu vào
 let createNewUser = async (data) => {
     return new Promise(async (resolve, reject) => {
         try {
@@ -29,9 +28,6 @@ let createNewUser = async (data) => {
 
 }
 let hashUserPassword = (password) => {
-    // resolve xử lý bình thường
-    // reject có vấn đề
-    // Promise tránh xử lý BĐB js giúp luôn trả về kết quả
     return new Promise(async (resolve, reject) => {
         try {
             let hashPassword = await bcrypt.hashSync(password, salt);

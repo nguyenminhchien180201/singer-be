@@ -1,5 +1,4 @@
 import express from "express";
-// lấy các tham số
 import bodyParser from "body-parser";
 import viewEngine from "./config/viewEngine";
 import initWebRoutes from './route/web';
@@ -10,7 +9,6 @@ let app = express();
 
 // app.use(cors({ origin: true }));
 // Add headers before the routes are defined
-// next đang định nghĩa một middlewere
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
@@ -29,7 +27,6 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
-// cấu hình tham số
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 viewEngine(app);
